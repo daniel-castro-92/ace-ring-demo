@@ -10,7 +10,6 @@ html,body{height:100%;background:#12061a;overflow:hidden;font-family:'Poppins',A
 #stage{position:relative;width:1920px;height:1080px;flex:none;transform-origin:center center}
 #stage>section{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;opacity:0;visibility:hidden;transition:opacity .35s ease}
 #stage>section.on{opacity:1;visibility:visible}
-section aside{display:none}
 section h1,section h2,section h3,section p{margin:0}
 section hr{border:none;height:0}
 section table{width:100%;border-collapse:collapse}
@@ -21,8 +20,6 @@ section video{display:block}
 #bar{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);display:flex;gap:10px;align-items:center;background:rgba(35,14,46,.75);color:#fff;font:500 14px Poppins,Arial;padding:8px 14px;border-radius:999px;opacity:.15;transition:opacity .2s;z-index:5}
 #bar:hover{opacity:1}
 #bar button{background:none;border:none;color:#fff;font:inherit;cursor:pointer;padding:2px 8px}
-#notes{position:fixed;left:0;right:0;bottom:0;max-height:34vh;overflow:auto;background:rgba(18,6,26,.94);color:#F3E8FD;font:400 17px/1.55 Poppins,Arial;padding:18px 28px 56px;display:none;z-index:4}
-#notes.on{display:block}
 </style></head><body>
 <div id="viewport"><div id="stage">
 <section id="cover" data-transition="fade" style="background:radial-gradient(ellipse at 85% 10%, #A855F7 0%, #6B21A8 30%, #230E2E 70%);color:#FFFCFA;font-family:'Poppins', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:flex-end;gap:40px">
@@ -30,7 +27,6 @@ section video{display:block}
 <p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#E8DDF5">Ace · Q4 growth case</p>
 <h1 style="font-size:112px;font-weight:600;line-height:1.05;letter-spacing:-2px;color:#FFFCFA">From dozens of tabs<br>to a confident decision</h1>
 <p style="font-size:32px;color:#E8DDF5">Daniel Castro · October 12, 2026</p>
-<aside>Open with the one-line promise. Everything in the next 8 slides earns this sentence: we acquire people in the middle of a big decision, Ace gets them to a confident answer, and that answer is what brings them back.</aside>
 </section>
 <section id="bet" data-transition="fade" style="background:#FFFCFA;color:#230E2E;font-family:'Poppins', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;justify-content:space-between;gap:32px">
 <div style="display:flex;flex-direction:column;gap:20px">
@@ -76,7 +72,6 @@ section video{display:block}
 <p style="font-size:24px;color:#6E6078">Ace · Q4 growth case</p>
 <p style="font-size:24px;color:#6E6078">01</p>
 </div>
-<aside>The whole recommendation in one breath. We start November 1, not after Black Friday, because research for big purchases starts early and every search made in Ace from day one is revenue. All English markets at once: the markets differ in creative and local brands, not in strategy, and together they are huge. I show it on engagement rings because it is the strongest story: December is the most popular month to propose, and one ring leads to a whole chain of decisions. The three numbers: Mastercard expects US holiday online retail sales to grow 11% year over year between November 1 and December 24. Nearly half of consumers already use AI to shop. And Ace has no holiday or shopping ads running today, so this is pure upside.</aside>
 </section>
 <section id="shopping" data-transition="fade" style="background:#FFFCFA;color:#230E2E;font-family:'Poppins', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
 <p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#7B2CBF;font-weight:600">02 · Why shopping</p>
@@ -116,7 +111,6 @@ section video{display:block}
 <p style="font-size:24px;color:#6E6078">Ace · Q4 growth case</p>
 <p style="font-size:24px;color:#6E6078">02</p>
 </div>
-<aside>Ace earns a share of the ad revenue from searches made in Ace, so the question is where search ad money goes. In the US, search ads were worth 114 billion dollars in 2025 according to IAB and PwC. Retail holds the largest share of any industry, about 29% by eMarketer's latest public estimate, roughly 33 billion dollars. Retail is also the largest ad spender overall. And it is the best product fit: shopping research is exactly the multi-tab, multi-source work Ace is built for, which I will show on slide 4. If asked: the 28.7% is eMarketer's estimate for 2023, published in February 2022. Their newer industry breakdown is behind a paid subscription.</aside>
 </section>
 <section id="where" data-transition="fade" style="background:#FFFCFA;color:#230E2E;font-family:'Poppins', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:28px">
 <p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#7B2CBF;font-weight:600">03 · Where to play</p>
@@ -154,7 +148,6 @@ section video{display:block}
 <p style="font-size:24px;color:#6E6078">Ace · Q4 growth case</p>
 <p style="font-size:24px;color:#6E6078">03</p>
 </div>
-<aside>Left: what advertisers pay for one click on searches in each segment. Ace earns a revenue share on the ad clicks from searches made inside Ace, so this is a proxy for what a user researching in this category is worth. A Blue Nile versus James Allen search is worth about 33 dollars a click, and even the educational question, lab versus natural, is worth 3. Mattresses are 11 to 14. E-bikes and espresso machines are worth far less, which is why we pick niches by value, not volume alone. Right: how we bring them back before they forget Ace. The ring is not one session: buyers look at about 10 rings, so days 1 to 3 are still the same decision, and their research is waiting for them in Ace. Days 3 to 5, the proposal itself needs planning. Days 5 to 7, it is December, and the same person is buying gifts, with try-on they already know. A price drop on the ring they shortlisted is a reason to open Ace without having to remember it. The alert has to be discreet, because ring shopping is often a secret on a shared laptop. The starred items are product features I would build with the product team, not features Ace has today. Then the long tail: bands, venue, honeymoon, the new home. The Knot: average ring 4,600 dollars, average wedding 34,000.</aside>
 </section>
 <section id="why" data-transition="fade" style="background:#FAF3EE;color:#230E2E;font-family:'Poppins', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
 <p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#7B2CBF;font-weight:600">04 · Why Ace wins</p>
@@ -176,7 +169,6 @@ section video{display:block}
 <p style="font-size:24px;color:#6E6078">Ace · Q4 growth case</p>
 <p style="font-size:24px;color:#6E6078">04</p>
 </div>
-<aside>Play the video and talk over it. Five steps on one real decision: 14 ring tabs grouped by purchase, reviews summarized on the product page, a 32-minute lab versus natural video summarized, one comparison table across the three rings, and the round yellow-gold solitaire shown on her hand. The try-on image at the end is real Ace output from the free plan: The buyer asks it the way a real buyer would: here is a photo of my girlfriend, how would this ring look on her. Ace returned that image from her photo and the product page. Be honest about competition: Chrome with Gemini and Google AI Mode can compare open tabs too. Our argument is the end-to-end flow on the user's own research, plus the visual moment at the end, which makes a 5,000 dollar decision feel safe. Notice the last suggestions, find her ring size and plan the proposal: that is the first-week return story from slide 3.</aside>
 </section>
 <section id="acquire" data-transition="fade" style="background:#FAF3EE;color:#230E2E;font-family:'Poppins', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:28px">
 <p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#7B2CBF;font-weight:600">05 · How we acquire</p>
@@ -220,7 +212,6 @@ section video{display:block}
 <p style="font-size:24px;color:#6E6078">Ace · Q4 growth case</p>
 <p style="font-size:24px;color:#6E6078">05</p>
 </div>
-<aside>Each channel has one job. Search stays the core, but it is expensive and it is where Ace already lives, so the growth comes from going beyond it. In search we do not fight for top positions on head terms: we own the long tail, which keeps growing as people type longer, AI-style questions. Beyond search means non-search Google and Microsoft inventory: YouTube on the review videos people already watch, Demand Gen, Display and the Microsoft Audience Network. Meta is a full prospecting channel now that mobile is live: the try-on is made for Reels, plus retargeting of visitors and idle installs, and lookalikes of activated users. Creators are the trust channel. Diamond experts come first, @LabGrownDiamondInfo and @JannPaulDiamonds, because ring buyers already trust them on lab versus natural. Then AI-tools creators and influencers for reach, and performance affiliates, all paid per activated user so we do not buy junk installs. As we add niches, each one gets its own experts first. The split is a plan, not a commitment: money moves weekly to the channel and niche with the best user value per dollar.</aside>
 </section>
 <section id="experience" data-transition="fade" style="background:#FFFCFA;color:#230E2E;font-family:'Poppins', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
 <p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#7B2CBF;font-weight:600">06 · The experience</p>
@@ -257,7 +248,6 @@ section video{display:block}
 <p style="font-size:24px;color:#6E6078">Ace · Q4 growth case</p>
 <p style="font-size:24px;color:#6E6078">06</p>
 </div>
-<aside>Left is what I saw installing Ace myself: generic, skippable onboarding, no guided first task, and the daily limit came before I could try a second use. Right is the proposed journey. Step 3 matters most for this audience: import from Chrome including the open tabs, so the research they already did continues in Ace instead of starting over. If the browser does not allow it, step 5 is the fallback: a guided start that opens the first sources for them, and Ace takes over once the tabs are open. Step 4: the ad already told us what they are deciding on, so the first screen asks about it. Steps 2 and 8, in purple, are the two default-browser asks: at install, one tap and skippable, and again within 24 hours of a completed decision, when the user has just felt the value. Activated means installed and completed a first decision task, like a comparison or a try-on, within 24 hours. Paying is a separate step we measure later. I would also test a more generous 7-day starter allowance against a holdout, on day 7 return and Premium conversion. The landing page will demo this onboarding live.</aside>
 </section>
 <section id="creative" data-transition="fade" style="background:#FAF3EE;color:#230E2E;font-family:'Poppins', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:26px">
 <p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#7B2CBF;font-weight:600">07 · Creative that converts</p>
@@ -308,7 +298,6 @@ section video{display:block}
 <p style="font-size:24px;color:#6E6078">Ace · Q4 growth case</p>
 <p style="font-size:24px;color:#6E6078">07</p>
 </div>
-<aside>One idea across every format: buying the ring is scarier than proposing. The buyer is not tired, they are afraid of regret, so every ad names a fear and shows the Ace feature that removes it. Search answers the exact question they type, lab versus natural, and promises the decision, not the tech. The Meta image goes after the biggest fear, will she love it, with a real Ace try-on: her photo in, the ring on her hand out, plus three checks for the other fears. The 25-second Reels and Shorts ad, playing here, is built as one story, not a feature tour. Hook, 3 seconds: the camera pulls back from the ring to her smile, under "Buying the ring is scarier than proposing." Problem: 14 tabs, six rings, prices that don't line up. Solution: one short question to Ace, then the try-on reveal on her hand, which is the emotional peak. Proof: three rings, three rows, like for like. CTA: what Ace is and what free means. It has music and sound effects, every message also works with the sound off, and all text stays clear of the platform overlays. Each concept gets 3 to 5 variants: the hook, the first 3 seconds and the CTA are the levers, plus a 15-second cut once we see where people drop. The interface is a recreation of Ace's real features with fictional retailers, and the try-on is real Ace output from the free plan. Top right: the live landing page and the onboarding and FTUE demo. Before opening the links at the bottom, ask first: what is the current feature hunt in your ads testing, and what have you learned about which feature brings people back? Then open Ace's live ads in the Google Ads Transparency Center and the Meta Ad Library, and connect what they run today to the retention story on slides 3 and 6.</aside>
 </section>
 <section id="december" data-transition="fade" style="background:linear-gradient(160deg, #230E2E 0%, #2E1240 60%, #3B1656 100%);color:#FFFCFA;font-family:'Poppins', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:30px">
 <p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#F7C6DC;font-weight:600">08 · The plan</p>
@@ -350,7 +339,6 @@ section video{display:block}
 <p style="font-size:24px;color:#D9C9EE">Ace · Q4 growth case</p>
 <p style="font-size:24px;color:#D9C9EE">08</p>
 </div>
-<aside>December does not have to hit 1 million dollars on its own, because we start investing in November and people buy big things all year. The plan is layers. November 1 to 7 proves a few launch niches, engagement rings and mattresses, at about 10 thousand a day. November 8 to 22 is the blitz: people researching big purchases before they decide, and every activated user becomes a seed for lookalikes. Black Friday week we hold: retailers fight for buyers in that auction and we are not selling, so we do not pay peak CPCs. We keep the long tail running and re-engage users we already have. December 2 to 20 we scale: the launch niches keep running, channels beyond search grow on the November seeds, new high-ticket niches join once proven, and we bring users back for the next purchase. Search volume may come off the Black Friday peak, but it stays high and our share grows. That is how December can reach about 1 million dollars, only if every gate passes. Gates: scale when marginal CAC is within the payback target and day 7 return is on target for 3 days running, hold within 15% of target, stop after 2 weeks below target or any traffic quality flag. Contribution per user is net search plus net affiliate plus net Premium, minus AI serving cost and marginal CAC.</aside>
 </section>
 <section id="system" data-transition="fade" style="background:#FFFCFA;color:#230E2E;font-family:'Poppins', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
 <p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#7B2CBF;font-weight:600">09 · The operating system</p>
@@ -398,7 +386,6 @@ section video{display:block}
 <p style="font-size:24px;color:#6E6078">Ace · Q4 growth case</p>
 <p style="font-size:24px;color:#6E6078">09</p>
 </div>
-<aside>This is how I run a team. One North Star everyone can repeat: activated users who come back within 7 days, judged by the money each cohort makes, with holdouts to prove what is incremental. Always on: AI agents monitor the accounts around the clock and act on set rules. A spend spike, a broken conversion tag, a burst of low-quality traffic or a creative that is wearing out gets caught and handled in minutes, not found at the weekly review. That is different from normal optimization, which is a person checking dashboards. I built this at Ryze, and it improved acquisition efficiency 37%. Every bid is priced on predicted lifetime value. Day-1 signals like the category researched, searches made, try-on used and a return on day 2 predict a user's 90-day value. We send that predicted value back to Google and Meta value-based bidding, so we pay more for a ring researcher who will search all December and less for a one-time visitor. Money moves weekly to the channel and niche with the best predicted value per dollar, and once a month we review real cohorts with the founders. First experiments: a day-2 "your research is waiting" prompt, the starter allowance, default-ask timing, and try-on as the first task.</aside>
 </section>
 <section id="qa" data-transition="fade" style="background:radial-gradient(ellipse at 15% 90%, #A855F7 0%, #6B21A8 30%, #230E2E 70%);color:#FFFCFA;font-family:'Poppins', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between;gap:40px">
 <div style="position:absolute;left:1200px;top:600px;width:560px;height:340px;background:radial-gradient(circle at 50% 50%, #F7C6DC 0%, rgba(247,198,220,0) 70%);opacity:0.45;filter:blur(20px)"></div>
@@ -410,28 +397,25 @@ section video{display:block}
 <p style="font-size:34px;line-height:1.35">What payback window do we underwrite?</p>
 <p style="font-size:34px;line-height:1.35">Why would a user choose Ace over ChatGPT, Gemini or another AI browser?</p>
 </div>
-<aside>Close by turning the conversation to their numbers and their view of the market. The answers on monetization, optimization target and payback would set the gates on slide 8 and the predicted-LTV model on slide 9. The competition question shows I am thinking about why users choose Ace, not only how to buy them.</aside>
 </section>
 </div></div>
-<div id="notes"></div>
-<div id="bar"><button id="prev" aria-label="Previous slide">←</button><span id="count"></span><button id="next" aria-label="Next slide">→</button><button id="ntoggle">Notes (N)</button><button id="fs">Full screen (F)</button></div>
+<div id="bar"><button id="prev" aria-label="Previous slide">←</button><span id="count"></span><button id="next" aria-label="Next slide">→</button><button id="fs">Full screen (F)</button></div>
 <script>
-const S=[...document.querySelectorAll('#stage>section')],stage=document.getElementById('stage'),notes=document.getElementById('notes');
+const S=[...document.querySelectorAll('#stage>section')],stage=document.getElementById('stage');
 let i=0;
+function toggleFS(){try{const p=document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();if(p&&p.catch)p.catch(()=>{})}catch(e){}}
 function fit(){const k=Math.min(innerWidth/1920,innerHeight/1080);stage.style.transform='scale('+k+')'}
 function show(n){i=Math.max(0,Math.min(S.length-1,n));S.forEach((s,j)=>{s.classList.toggle('on',j===i);if(j!==i)s.querySelectorAll('video').forEach(v=>v.pause())});
-document.getElementById('count').textContent=(i+1)+' / '+S.length;const a=S[i].querySelector('aside');notes.textContent=a?a.textContent:'';history.replaceState(null,'','#'+(i+1))}
+document.getElementById('count').textContent=(i+1)+' / '+S.length;try{history.replaceState(null,'','#'+(i+1))}catch(e){}}
 document.querySelectorAll('section a[href]').forEach(a=>{a.target='_blank';a.rel='noopener'});
 addEventListener('resize',fit);fit();
-show(Math.max(0,(parseInt(location.hash.slice(1))||1)-1));
+let h0=1;try{h0=parseInt(location.hash.slice(1))||1}catch(e){}show(Math.max(0,h0-1));
 addEventListener('keydown',e=>{if(e.target.tagName==='VIDEO'&&(e.key===' '))return;
  if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();show(i+1)}
  else if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();show(i-1)}
- else if(e.key==='n'||e.key==='N')notes.classList.toggle('on');
- else if(e.key==='f'||e.key==='F'){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()}
+ else if(e.key==='f'||e.key==='F'){toggleFS()}
  else if(e.key==='Home')show(0);else if(e.key==='End')show(S.length-1)});
 document.getElementById('prev').onclick=()=>show(i-1);document.getElementById('next').onclick=()=>show(i+1);
-document.getElementById('ntoggle').onclick=()=>notes.classList.toggle('on');
-document.getElementById('fs').onclick=()=>document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();
+document.getElementById('fs').onclick=()=>{toggleFS()};
 let tx=null;addEventListener('touchstart',e=>tx=e.touches[0].clientX);addEventListener('touchend',e=>{if(tx===null)return;const dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>50)show(i+(dx<0?1:-1));tx=null});
 </script></body></html>
